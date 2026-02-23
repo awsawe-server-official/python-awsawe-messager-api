@@ -43,7 +43,7 @@
 
 ```bash
 # Установка зависимости
-pip install requests
+pip install git+https://github.com/awsawe-server-official/python-awsawe-messager-api.git
 
 # Клонирование библиотеки (если необходимо)
 git clone [url-репозитория]
