@@ -54,24 +54,3 @@ def recv(config):
             print(f"❌ Ошибка: {data.get('message')}")
     
     return data
-
-def get_info(config):
-    bot_id = config['bot_id']
-    bot_token = config['bot_token']
-    debug = config.get('debug', 'false')
-    
-    url_info = f"{url}api/bot/{bot_id}/info"
-    headers = {"Authorization": f"Bot {bot_token}"}
-    
-    response = requests.get(url_info, headers=headers)
-    data = response.json()
-    
-    if debug == "true":
-        if data.get('success'):
-            print(f"🤖 Информация о боте:")
-            print(f"ID: {data.get('bot_id')}")
-            print(f"Имя: {data.get('name')}")
-        else:
-            print(f"❌ Ошибка: {data.get('message')}")
-    
-    return data
