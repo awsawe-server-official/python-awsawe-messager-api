@@ -1,0 +1,35 @@
+[build-system]
+requires      = ["setuptools>=68.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name          = "awsawe-messager-api"
+version       = "1.0.0"
+description   = "Библиотека для работы с AI Messenger API"
+readme        = "README.md"
+requires-python = ">=3.6"
+license       = { text = "Other/Proprietary License" }
+authors       = [{ name = "awsawe-server.ru", email = "awsawe.server.official@gmail.com" }]
+
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.6",
+    "Programming Language :: Python :: 3.7",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "License :: Other/Proprietary License",
+    "Operating System :: OS Independent",
+    "Intended Audience :: Developers",
+    "Topic :: Communications :: Chat",
+]
+
+dependencies = [
+    "requests>=2.25.0",
+]
+
+urls = {
+    Documentation = "https://github.com/awsawe-server-official/python-awsawe-messager-api/blob/main/README.md",
+    Source       = "https://github.com/awsawe-server-official/python-awsawe-messager-api",
+}
