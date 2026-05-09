@@ -49,18 +49,6 @@ pip install git+https://github.com/awsawe-server-official/python-awsawe-messager
 git clone [url-репозитория]
 🚀 Быстрый старт
 python
-from awsawe_messager_api import user, bot
-
-# Пример для бота
-bot_config = {
-    'bot_id': '123456789',
-    'bot_token': 'ваш_токен',
-    'chat_id': '987654321',
-    'debug': 'true'
-}
-
-# Отправка сообщения от бота
-bot.send(bot_config, "Привет от бота!")
 🤖 BOT API
 Bot API не использует шифрование и идеально подходит для создания простых ботов.
 
