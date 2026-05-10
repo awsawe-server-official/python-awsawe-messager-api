@@ -2,7 +2,7 @@
 
 <div align="center">
   
-### 🚀 Библиотека для работы с AI Messenger API
+### Библиотека для работы с AI Messenger API
   
 [![Python Version](https://img.shields.io/badge/python-3.6+-blue.svg)](https://www.python.org/)
 [![License](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
@@ -10,7 +10,7 @@
 
 </div>
 
-## 📋 Содержание
+## Содержание
 
 - [О библиотеке](#о-библиотеке)
 - [Требования](#требования)
@@ -29,8 +29,8 @@
 
 | Режим | Шифрование |
 |-------|------------|
-| **Bot API** | ❌ Нет |
-| **User API** | ✅ Да |
+| **Bot API** | Нет |
+| **User API** | Да |
 
 ## 🔧 Требования
 
@@ -44,12 +44,12 @@
 ```bash
 # Клонирование библиотеки
 git clone https://github.com/awsawe-server-official/python-awsawe-messager-api.git
-🚀 Быстрый старт
+Быстрый старт
 python
-🤖 BOT API
+BOT API
 Bot API не использует шифрование и идеально подходит для создания простых ботов.
 
-📤 Отправка сообщения
+Отправка сообщения
 python
 from awsawe_messager_api import bot
 
@@ -63,7 +63,7 @@ config = {
 # Отправка сообщения
 result = bot.send(config, "Привет! Я бот!")
 print(result)
-📥 Получение сообщений
+Получение сообщений
 python
 from awsawe_messager_api import bot
 
@@ -78,10 +78,10 @@ config = {
 # Получение последних сообщений
 messages = bot.recv(config)
 print(messages)
-👤 USER API
+USER API
 User API использует шифрование сообщений и требует авторизации пользователя.
 
-📤 Отправка сообщения
+Отправка сообщения
 python
 from awsawe_messager_api import user
 
@@ -95,7 +95,7 @@ config = {
 # Отправка зашифрованного сообщения
 result = user.send(config, "Секретное сообщение!")
 print(result)
-📥 Получение сообщений
+Получение сообщений
 python
 from awsawe_messager_api import user
 
