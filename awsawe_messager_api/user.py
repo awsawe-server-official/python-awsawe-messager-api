@@ -31,16 +31,16 @@ def send(config, text):
         
         if debug == "true":
             if result.get('success'):
-                print("✅ Сообщение успешно отправлено и зашифровано")
+                print("Сообщение успешно отправлено и зашифровано")
                 print(f"ID сообщения: {result.get('message_id')}")
                 print(f"Время отправки: {result.get('time_display')}")
             else:
-                print(f"❌ Ошибка при отправке: {result.get('message')}")
+                print(f"Ошибка при отправке: {result.get('message')}")
         
         return result
     else:
         if debug == "true":
-            print(f"❌ Ошибка авторизации: {auth_result.get('message')}")
+            print(f"Ошибка авторизации: {auth_result.get('message')}")
         return auth_result
 
 def recv(config):
@@ -69,12 +69,12 @@ def recv(config):
         if debug == "true":
             if data.get('success'):
                 message = data['messages'][0]
-                print(f"📨 [{message['time_display']}] {message.get('user', 'Система')}: {message['text']}")
+                print(f"[{message['time_display']}] {message.get('user', 'Система')}: {message['text']}")
             else:
-                print(f"❌ Ошибка при получении сообщений: {data.get('message')}")
+                print(f"Ошибка при получении сообщений: {data.get('message')}")
         
         return data
     else:
         if debug == "true":
-            print(f"❌ Ошибка авторизации: {auth_result.get('message')}")
+            print(f"Ошибка авторизации: {auth_result.get('message')}")
         return auth_result
