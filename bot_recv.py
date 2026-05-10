@@ -9,5 +9,6 @@ config = {
 }
 
 # Получение последних сообщений
-messages = bot.recv(config)
-print(messages)
+while True:
+    messages = bot.recv(config)
+    print(messages)
