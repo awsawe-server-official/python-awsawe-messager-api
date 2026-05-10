@@ -22,10 +22,10 @@ def send(config, text):
     
     if debug == "true":
         if result.get('success'):
-            print("✅ Сообщение успешно отправлено")
+            print("Сообщение успешно отправлено")
             print(f"ID сообщения: {result.get('message_id')}")
         else:
-            print(f"❌ Ошибка: {result.get('message')}")
+            print(f"Ошибка: {result.get('message')}")
     
     return result
 
@@ -51,6 +51,6 @@ def recv(config):
             message = data['messages']
             return message
         else:
-            print(f"❌ Ошибка: {data.get('message')}")
+            print(f"Ошибка: {data.get('message')}")
     
     return data
