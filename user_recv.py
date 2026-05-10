@@ -10,5 +10,6 @@ config = {
 }
 
 # Получение и расшифровка сообщений
-messages = user.recv(config)
-print(messages)
+while True:
+    messages = user.recv(config)
+    print(messages)
